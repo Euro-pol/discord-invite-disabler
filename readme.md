@@ -5,4 +5,5 @@ PoC funny troll website that disables discord invites for an amount of time (24+
 Since discord uses cloudflare, they added a rule that blocks someone after spamming requests on the [invite endpoint](https://discord.com/api/invites/nouveau). Therefore, you will see an error when using invites in the discord client. Note that it takes ~1 minute to get rate limited.  
 
 # Images  
-yeah
+![Website](https://github.com/Euro-pol/discord-invite-disabler/blob/main/image1.png?raw=true)  
+![Discord client](https://github.com/Euro-pol/discord-invite-disabler/blob/main/image2.png?raw=true)
