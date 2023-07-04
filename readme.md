@@ -6,4 +6,7 @@ Since discord uses cloudflare, they added a rule that blocks someone after spamm
 
 # Images  
 ![Website](https://github.com/Euro-pol/discord-invite-disabler/blob/main/image1.png?raw=true)  
-![Discord client](https://github.com/Euro-pol/discord-invite-disabler/blob/main/image2.png?raw=true)
+![Discord client](https://github.com/Euro-pol/discord-invite-disabler/blob/main/image2.png?raw=true)  
+
+# Contributing  
+Pull requests/issues are welcome. Fixing issue, making the HTTP requests faster...
